@@ -30,8 +30,8 @@ jobs:
           push: true
           build-args: VITE_API_URL=
           tags: |
-            ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:${{ github.sha }}
+            ghcr.io/muhammadkhan3/movie-fe:latest
+            ghcr.io/muhammadkhan3/movie-fe:${{ github.sha }}
 
       - name: Deploy frontend image
         uses: appleboy/ssh-action@v1.0.3
